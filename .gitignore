@@ -1,0 +1,45 @@
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## FRONTEND
+# compiled output
+/frontend/node_modules
+
+# next.js
+/frontend/.next/
+/frontend/out/
+
+# production
+/frontend/build
+
+# misc
+/frontend/.DS_Store
+/frontend/*.pem
+
+# local env files
+/frontend/.env*.local
+
+# typescript
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts
+
+## BACKEND
+# compiled output
+/backend/dist
+/backend/node_modules
+
+# local env files
+/backend/.env

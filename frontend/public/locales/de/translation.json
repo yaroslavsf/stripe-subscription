@@ -1,0 +1,14 @@
+{
+  "change-locale" : "de",
+  "navigation" : {
+    "service": "Dienst"
+  },
+  "main" : {
+    "services": {
+      "header": "Dienste"
+    },
+    "howItWorks": {
+      "header": "So funktioniert's"
+    }
+  }
+}
