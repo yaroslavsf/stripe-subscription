@@ -26,21 +26,22 @@ to this endpoint is an event like "Payment is successful" or "Card is declined".
   for payment, the following problems start to raise in pre-built pages:
 
 1) Checkout page:
-    1. You can enter any email => email divergence.
+    1. You can enter any email => email divergence (pre-population).
     2. Backend can generate checkout session with
        the email from auth context, so the frontend can pre-populate the form with email.
        But if there is "Google pay", there you can choose any google account => email divergence
+       (turn off google/apple/link payments)
 2) Portal page:
     1. You can enter the email that you possess, but if someone entered your email
-       in checkout session => they overwrite your subscription
+       in checkout session => they overwrite your subscription (verify email)
     2. Backend can generate portal session only after checkout
-       redirection => only after checkout
+       redirection => only after checkout (verify email)
    3. If email doesn't belongs to you => can't enter portal page, cancel only
-   via bank
+   via bank (verify email)
 
 <b>Solution:</b> Configure constraint on 1 subscription per customer in
 Stripe Dashboard. Pre-populate emails in pre-build pages (unique constraint).
-Verify email when register.
+Verify email when register. Turn off google/apple/link payments
 
 
 </details>
