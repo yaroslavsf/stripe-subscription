@@ -14,6 +14,11 @@ user has.
 Stripe can provide you with info about the payment via "Webhook" endpoint. Each request
 to this endpoint is an event like "Payment is successful" or "Card is declined".
 
+<b>Small presentation</b>:
+./stripe.pptx
+<br>
+  
+
 <details>
   <summary>Problems</summary>
   Customer email is not unique in Stripe. So one customer can subscribe to many 
